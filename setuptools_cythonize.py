@@ -102,7 +102,7 @@ class CythonizeBuildPy(build_py):
                             ".".join([pkg, mod]),
                             [pth],
                             cython_c_in_temp=True,
-                            # Ensure cython compiles in a relevent language mode setting
+                            # Ensure cython compiles with a relevent language mode setting
                             cython_directives={'language_level': sys.version[0]}
                         )
                     )
